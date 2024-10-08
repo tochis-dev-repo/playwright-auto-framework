@@ -34,6 +34,12 @@ class BasePage {
     async waitForTimeout(timeout) {
         await this.page.waitForTimeout(timeout);
     }
+
+    //searches for text anywhere on the page
+    async isTextPresent(text) {
+        const bodyText = await this.page.locator('body').innerText();
+        return bodyText.includes(text);
+    }
 }
 
 module.exports = BasePage;
