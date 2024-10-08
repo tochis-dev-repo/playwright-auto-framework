@@ -21,7 +21,6 @@ The framework uses the **Page Object Model (POM)** to organize test files and se
    - User registration
    - User login
    - Account verification
-   - Fund transfer operations
 
 2. **/page object models/**:
    - **basePage.js**: Defines common methods such as navigation, clicking, typing, and checking text visibility. Other page objects inherit from this base class.
